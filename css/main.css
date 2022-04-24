@@ -87,9 +87,11 @@ header, nav, main, footer {
   text-shadow: 1px 2px 8px #000000;
 }
 
-.lessons {
+.lessons ul {
   border-top: 1.5px solid #b1afaf;
   border-bottom: 1.5px solid #b1afaf;
+  margin: 0;
+  padding: 1rem 3rem;
 }
 
 .content-footer {
