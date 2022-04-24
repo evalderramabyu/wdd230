@@ -57,28 +57,27 @@ header, nav, main, footer {
 }
 
 .info-box .pic {
-    grid-column: 1;
-    grid-row: 1;
-    margin: 1em 3em;
-    text-align: center;
-  }
+  grid-column: 1;
+  grid-row: 1;
+  margin: 1em;
+  text-align: center;
+}
 
 .info-box .pic img{
   box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 7px
 }
 
 .info-box .name {
-    color: var(--accent2-color);
-    grid-column: 2 / 4;
-    grid-row: 1;
-    padding-right: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
+  color: var(--accent2-color);
+  grid-column: 2 / 4;
+  grid-row: 1;
+  padding-right: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.info-box .name h2 {
+.info-box .name h1 {
   text-shadow: 1px 2px 8px #000000;
 }
 
@@ -115,6 +114,10 @@ header, nav, main, footer {
 
 @media only screen and (min-width: 750px)
                    and (min-height: 720px) {
+  .info-box .pic {
+    margin: 1em 3em;
+  }
+
   footer {
     position: absolute;
     bottom: 0;
