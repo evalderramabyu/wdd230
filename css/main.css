@@ -1,0 +1,120 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,100,200,300,500,600,800,700,900');
+
+:root {
+  --primary-color: #CEAA8F;
+  --secondary-color: #F2EDE9;
+  --accent1-color: #5C80AB;
+  --accent2-color: white;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Nunito";
+  --paragraph-font: "Nunito", sans-serif, monospace;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: black;  /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: black; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: black;
+  --nav-link-color: #396E94;
+  --nav-background-color: #E7C24F;
+  --nav-hover-link-color: #E7C24F;
+  --nav-hover-background-color: #396E94;
+}
+
+html {
+  font-family: var(--paragraph-font);
+}
+
+body {
+  /* background-color: var(--secondary-color); */
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+}
+
+header  {
+  font-family: var(--heading-font);
+}
+
+header, nav, main, footer {
+  margin: 1.25rem auto;
+  max-width: 760px;
+}
+
+.content-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.info-box {
+  background-color: var(--accent1-color);
+  /* border: 1px solid #edf2f9; */
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info-box .pic {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 1em 3em;
+    text-align: center;
+  }
+
+.info-box .pic img{
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 7px
+}
+
+.info-box .name {
+    color: var(--accent2-color);
+    grid-column: 2 / 4;
+    grid-row: 1;
+    padding-right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.info-box .name h2 {
+  text-shadow: 1px 2px 8px #000000;
+}
+
+.section-title {
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 2px 8px #000000;
+}
+
+.lessons {
+  border-top: 1.5px solid #b1afaf;
+  border-bottom: 1.5px solid #b1afaf;
+}
+
+.content-footer {
+  padding: 0.75rem 1.25rem;
+}
+
+.content-footer > span {
+  display: block;
+  margin: 0.25rem auto;
+  text-align: center;
+}
+
+.content-footer .credits {
+  color: #fff;
+}
+
+.content-footer .update-info {
+  color: #cefafb;
+  font-size: 0.9rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 760px;
+}
