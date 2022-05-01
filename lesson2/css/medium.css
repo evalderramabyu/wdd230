@@ -1,0 +1,13 @@
+@media only screen and (min-width: 37.5em) {
+  main {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principle-main {
+      grid-template-rows: 2rem 2rem 1fr;
+  }
+
+  section:last-child {
+      grid-column: 1 / 3;
+  }
+}
