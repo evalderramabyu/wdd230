@@ -63,6 +63,9 @@ main section .header {
   border-top-right-radius: 0.5rem;
   color: #fff;
   padding: 0.3rem 0.4rem;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: inherit;
 }
 
 main section .content {
