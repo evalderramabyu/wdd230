@@ -239,6 +239,7 @@ footer {
 .header {
   font-size: 1rem;
   font-weight: 700;
+  margin: 0;
   text-align: center;
   text-shadow: 2px 2px 3px #B4BECE;
 }
