@@ -236,7 +236,7 @@ footer {
   text-align: center;
 }
 
-.title {
+.header {
   font-size: 1rem;
   font-weight: 700;
   text-align: center;
@@ -264,7 +264,7 @@ footer {
   background-size: cover;
 }
 
-.hero .title {
+.hero .header {
   font-size: 1.3rem;
   text-align: left;
 }
