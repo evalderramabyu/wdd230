@@ -53,4 +53,13 @@
     text-align: center;
     grid-column: 2/3;
   }
+
+  .hero {
+    background: url(../images/sugarcane_short.png) no-repeat;
+    background-size: cover;
+  }
+
+  .weather {
+    width: -webkit-fill-available;
+  }
 }

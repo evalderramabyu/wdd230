@@ -37,6 +37,12 @@ body {
   margin: 0 auto;
 }
 
+#banner {
+  display: none;
+  background-color: #d1cc93;
+  text-align: center;
+}
+
 header  {
   align-items: center;
   background-color: #324266;
@@ -117,6 +123,10 @@ nav ul li a.active:before {
   width: 100%;
 }
 
+nav ul li:hover {
+  background-color: #445780;
+}
+
 .social-media {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -150,9 +160,15 @@ main {
 .content section {
   background-color: rgb(218, 216, 232);
   border: 1px solid #777;
-  font-style: italic;
-  min-height: 200px;
+  font-size: 0.8rem;
+  min-height: 160px;
   padding: 1rem;
+  position: relative;
+}
+
+.content section a {
+  color: #436f95;
+  text-decoration: none;
 }
 
 .join {
@@ -163,10 +179,20 @@ main {
   border: 1px solid #777;
   padding: 1rem;
   min-height: 150px;
+  text-align: center;
 }
 
 .spotlights > div:last-child {
   display: none;
+}
+
+.spotlights .subtitle {
+  border-bottom: 1px solid #333;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1rem;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 footer {
@@ -208,4 +234,100 @@ footer {
   display: block;
   margin: 0.25rem auto;
   text-align: center;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 3px #B4BECE;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.join-us {
+  background-color: #5b8acd;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 15px rgb(179 179 179);
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero {
+  background: url(../images/sugarcane.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .title {
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.hero .join-us {
+  box-shadow: 0 0 6px rgb(60 103 166);
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  padding: 0.3rem 1rem;
+}
+
+.event .subtitle {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.weather {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.weather .forecast {
+  display: flex;
+  align-items: center;
+}
+
+.weather .forecast-value {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-left: 30px;
+}
+
+.weather .subtitle {
+  border-bottom: 1px solid #333;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.weather .weather-elements {
+  display: flex;
+}
+
+.weather .weather-elements .element {
+  text-align: right;
+  width: 40%;
+}
+
+.weather .weather-elements .element-value {
+  text-align: center;
+  width: 60%;
+}
+
+.join .join-us {
+  color: #fff;
+  width: 80%;
+}
+
+.join .join-us:hover {
+  background-color: #edf2f9;
 }
