@@ -260,9 +260,21 @@ footer {
 }
 
 .hero {
-  background: url(../images/sugarcane.png) no-repeat;
+  /*background: url(../images/sugarcane.png) no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover;*/
+}
+
+.hero picture {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+.hero picture img {
+  width: 100%;
 }
 
 .hero .header {
