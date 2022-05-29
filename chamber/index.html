@@ -17,7 +17,7 @@
     </div>
     <header>
       <div class="logo-info">
-        <img class="logo" src="images/logo.png" alt="Sugar Cane Chamber">
+        <img class="logo" src="images/logo.webp" alt="Sugar Cane Chamber">
         <div class="info">
             <h3>Chamber of</h3>
             <h3>Commerce</h3>
@@ -70,17 +70,17 @@
 
           <div class="forecast">
             <img src="images/weather.png" alt="Weather" width="70">
-            <div class="forecast-value">33°C</div>
+            <div class="forecast-value"><span id="temperature">9</span>°C</div>
           </div>
 
           <div class="subtitle">Partly Cloudy</div>
           <div class="weather-elements">
             <div class="element">Wind Speed:</div>
-            <div class="element-value">2.5 km/h</div>
+            <div class="element-value"><span id="wind-speed">6.5</span> km/h</div>
           </div>
           <div class="weather-elements">
             <div class="element">Wind Chill:</div>
-            <div class="element-value">N/A</div>
+            <div class="element-value"><span id="wind-chill"></span></div>
           </div>
         </section>
 
@@ -156,5 +156,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>
