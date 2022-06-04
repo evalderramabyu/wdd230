@@ -1,0 +1,45 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Questrial&display=swap');
+
+
+:root {
+  --primary-color: #CEAA8F;
+  --secondary-color: #F2EDE9;
+  --accent1-color: #f3eae4;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Questrial', sans-serif;
+  --paragraph-font: 'Nunito', sans-serif;
+}
+
+html {
+  font-family: var(--paragraph-font);
+}
+
+body {
+  background-color: var(--accent1-color);
+  font-family: var(--paragraph-font);
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header  {
+  align-items: center;
+  font-family: var(--heading-font);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+
+img[data-src] {
+  filter: blur(0.2em);
+}
+
+img {
+  display: block;
+  filter: blur(0em);
+  transition: filter 0.20s;
+  margin: 1em auto;
+}
