@@ -409,3 +409,7 @@ footer {
   font-style: italic;
   font-weight: 500;
 }
+
+.d-none {
+  display: none;
+}
