@@ -7,7 +7,7 @@
     padding: 1rem 0.2rem;
   }
 
-  .content {
+  .content.home {
     grid-template-columns: 60% 1fr;
     grid-template-rows: repeat(5, 1fr);
   }
@@ -54,12 +54,34 @@
     grid-column: 2/3;
   }
 
-  .hero {
-    /*background: url(../images/sugarcane_short.png) no-repeat;
-    background-size: cover;*/
-  }
-
   .weather {
     width: -webkit-fill-available;
+  }
+
+  /* Discover */
+  .discover .attractions {
+    padding: 0;
+  }
+
+  .discover .attractions article {
+    flex-direction: row;
+  }
+
+  .discover .attractions article picture {
+    padding: 0.5rem;
+    width: 55%;
+  }
+
+  .discover .attractions article picture img:hover {
+    box-shadow: 0 0 20px #777;
+  }
+
+  .discover .attractions article .description {
+    padding: 1rem;
+    width: 45%;
+  }
+
+  .discover .attractions article .description .title {
+    width: 100%;
   }
 }

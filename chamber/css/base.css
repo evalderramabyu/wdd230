@@ -151,13 +151,13 @@ main {
   padding: 1rem 0.2rem;
 }
 
-.content {
+.content.home {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
 }
 
-.content section {
+.content.home section {
   background-color: rgb(218, 216, 232);
   border: 1px solid #777;
   font-size: 0.8rem;
@@ -166,7 +166,7 @@ main {
   position: relative;
 }
 
-.content section a {
+.content.home section a {
   color: #436f95;
   text-decoration: none;
 }
@@ -259,12 +259,6 @@ footer {
   text-align: center;
 }
 
-.hero {
-  /*background: url(../images/sugarcane.png) no-repeat;
-  background-position: center;
-  background-size: cover;*/
-}
-
 .hero picture {
   width: 100%;
   position: absolute;
@@ -343,4 +337,71 @@ footer {
 
 .join .join-us:hover {
   background-color: #edf2f9;
+}
+
+/* Discover */
+.discover h2 {
+  margin: 0 0 0.8rem;
+}
+
+.discover .attractions {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+}
+
+.discover .attractions article {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+  min-height: 1rem;
+  width: 100%;
+}
+
+.discover .attractions article:nth-child(odd) {
+  background: #f0f0f0;
+}
+
+.discover .attractions article:nth-child(even) {
+  border: 0.08rem solid #f0f0f0;
+}
+
+.discover .attractions article picture {
+  padding: 0.5rem 0.5rem 0;
+}
+
+.discover .attractions article picture img {
+  transition: all .3s ease-in;
+  width: 100%;
+}
+
+.discover .attractions article .description {
+  font-size: 0.9rem;
+  padding: 0 0.5rem 0.5rem;
+  width: 100%;
+}
+
+.discover .attractions article .description .title {
+  border-bottom: .1rem solid #e5e5e5;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  width: 96%;
+}
+
+.discover .user-visit {
+  background: aliceblue;
+  display: table;
+  font-size: .9rem;
+  font-weight: 300;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.discover .user-visit .last-visit {
+  font-style: italic;
+  font-weight: 500;
 }
