@@ -391,6 +391,10 @@ footer {
   width: 96%;
 }
 
+.discover .attractions article .description .text {
+  width: 97%;
+}
+
 .discover .user-visit {
   background: aliceblue;
   display: table;
