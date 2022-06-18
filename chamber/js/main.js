@@ -71,7 +71,7 @@ if (document.querySelector('.content.discover')) {
     }
 }
 
-if (document.querySelector('.content.join')) {
+if (document.querySelector('.content.join-page')) {
     document.querySelector('#current_time').innerHTML = new Date().toLocaleString();
 }
 
