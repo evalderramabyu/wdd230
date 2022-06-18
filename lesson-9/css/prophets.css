@@ -44,8 +44,8 @@ header h1 {
   margin: 0 0 0.5rem;
 }
 
-.cards section p {
-  margin-top: .3rem;
+.cards section div {
+  margin-bottom: .3rem;
 }
 
 .cards section img {
@@ -56,8 +56,6 @@ header h1 {
 }
 
 footer {
-  text-align: center;
   margin: 2rem 0;
-  font-weight: bold;
-  font-size: 1.2rem;
+  text-align: center;
 }
