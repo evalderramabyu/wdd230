@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Questrial&display=swap');
+
+
+:root {
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Questrial', sans-serif;
+  --paragraph-font: 'Nunito', sans-serif;
+}
+
+html {
+  font-family: var(--paragraph-font);
+}
+
+body {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 1rem;
+}
+
+.cards section {
+  background: #92bddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,.5);
+  border-radius: 0.3rem;
+}
+
+.cards section h2 {
+  margin: 0 0 0.5rem;
+}
+
+.cards section p {
+  margin-top: .3rem;
+}
+
+.cards section img {
+  border-radius: 0.3rem;
+  box-shadow: .3rem .3rem .5rem rgba(0,0,0,.5);
+  margin-top: 0.5rem;
+  width: 70%;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
