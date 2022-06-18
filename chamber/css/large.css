@@ -81,4 +81,8 @@
     padding: 1rem;
     width: 55%;
   }
+
+  form {
+    width: 70%;
+  }
 }

@@ -70,3 +70,14 @@ if (document.querySelector('.content.discover')) {
         return parseInt((date1 - date2) / 1000 / 3600 / 24);
     }
 }
+
+if (document.querySelector('.content.join')) {
+    document.querySelector('#current_time').innerHTML = new Date().toLocaleString();
+}
+
+if (document.querySelector('.content.thanks')) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const firstName = urlParams.get('first_name')
+    document.querySelector('#first_name').innerHTML = firstName;
+}
