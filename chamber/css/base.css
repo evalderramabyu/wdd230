@@ -521,7 +521,8 @@ input[type=submit] {
 
 .directory .list section {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: left;
 }
 
 .directory .grid section {
@@ -531,11 +532,6 @@ input[type=submit] {
 
 .directory .grid section > * {
   margin: 0.1rem;
-}
-
-.directory .list section {
-  flex-direction: row;
-  justify-content: left;
 }
 
 .directory .list section > * {
@@ -549,6 +545,7 @@ input[type=submit] {
 
 .directory article section h3 {
   font-size: 1.5rem;
+  margin-bottom: 0.8rem !important;
 }
 
 .directory article section a {

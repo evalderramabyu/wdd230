@@ -86,11 +86,27 @@
   }
 
   /* Directory */
+  .directory .list section {
+    align-items: center;
+    flex-direction: row;
+  }
+
   .directory .grid section img {
     display: initial;
   }
 
+  .directory .list section h3 {
+    font-size: 1rem;
+    min-width: 150px;
+  }
+
   .directory .list section img {
     display: none;
+  }
+
+  .directory .list section a {
+    max-width: 333px;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
