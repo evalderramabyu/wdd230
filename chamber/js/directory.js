@@ -40,12 +40,12 @@ fetch(requestURL)
 
 function displayCompany(company) {
   // Create elements to add to the document
-  let directorySection = document.createElement('section');
+  let card = document.createElement('section');
+  let nameCompany = document.createElement('h3')
   let logoCompany = document.createElement('img');
-  let nameCompany = document.createElement('h2')
   let addressCompany = document.createElement('p');
   let phoneCompany = document.createElement('p')
-  let webCompany = document.createElement('p')
+  let webCompany = document.createElement('a')
   let levelMember = document.createElement('p')
 
 
@@ -55,23 +55,28 @@ function displayCompany(company) {
   logoCompany.setAttribute('loading', 'lazy');
 
   // Change the textContent property of the h2, p element to contain the name, address, phone, website and membership of the companies.
-  nameCompany.textContent = `${company.name}`
-  addressCompany.textContent = `${company.address}`
-  phoneCompany.textContent = `${company.phone_number}`
-  webCompany.textContent = `${company.website}`
-  levelMember.textContent = `${company.membership_level}`
+  nameCompany.textContent = company.name;
+  addressCompany.textContent = company.address;
+
+  phoneCompany.textContent = company.phone_number;
+  phoneCompany.classList.add("phone-number");
+
+  webCompany.setAttribute('href', company.website);
+  webCompany.textContent = company.website;
+
+  levelMember.textContent = company.membership_level;
 
 
   // Add/append the section(company) with img, h2 and four p element.
-  directorySection.appendChild(logoCompany);
-  directorySection.appendChild(nameCompany);
-  directorySection.appendChild(addressCompany);
-  directorySection.appendChild(phoneCompany);
-  directorySection.appendChild(webCompany);
-  directorySection.appendChild(levelMember);
+  card.appendChild(logoCompany);
+  card.appendChild(nameCompany);
+  card.appendChild(addressCompany);
+  card.appendChild(phoneCompany);
+  card.appendChild(webCompany);
+  card.appendChild(levelMember);
 
 
   // Add/append the existing HTML div with the directory_box class with the section(company)
-  document.querySelector('.directory article').appendChild(directorySection);
+  document.querySelector('.directory article').appendChild(card);
 }
 

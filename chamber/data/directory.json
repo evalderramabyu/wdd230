@@ -57,19 +57,19 @@
       "membership_level": "Bronze Membership"
     },
     {
-      "name": "Agrolmos S.A.",
-      "address": "Av. Parque Fabrica Nro. S/N, Casa Grande, La Libertad",
-      "phone_number": "+51 44 443306",
-      "website": "http://www.coazucar.com/ing/agrolmos_nosotros.html",
-      "image": "agrolmos.png",
+      "name": "Caña Brava",
+      "address": "Carretera Ignacio Escudero a Tamaridno Km 6, Sullana, Piura",
+      "phone_number": "+51 1 7193300",
+      "website": "http://www.canabrava.com.pe/",
+      "image": "canabrava.png",
       "membership_level": "Bronze Membership"
     },
     {
-      "name": "Agrolmos S.A.",
-      "address": "Av. Parque Fabrica Nro. S/N, Casa Grande, La Libertad",
-      "phone_number": "+51 44 443306",
-      "website": "http://www.coazucar.com/ing/agrolmos_nosotros.html",
-      "image": "agrolmos.png",
+      "name": "Agrarian Company Chiquitoy S.A.",
+      "address": "Plaza 24 de junio s/n, Chiquitoy, Ascope, La Libertad",
+      "phone_number": "+51 44 442150",
+      "website": "http://www.coazucar.com/esp/chiquitoy_nosotros.html",
+      "image": "chiquitoy.png",
       "membership_level": "Bronze Membership"
     }
   ]
