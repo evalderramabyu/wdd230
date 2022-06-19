@@ -1,0 +1,76 @@
+{
+  "directory": [
+    {
+      "name": "Agro Industrial Paramonga",
+      "address": "Av. Ferrocarril 212, Paramonga, Barranca",
+      "phone_number": "+51 1 6421111",
+      "website": "https://www.agroparamonga.com/",
+      "image": "paramonga.svg",
+      "membership_level": "Gold Membership"
+    },
+    {
+      "name": "Agroindustrial Laredo",
+      "address": "Av Trujillo S/N - Zona Industrial, Laredo, Trujillo",
+      "phone_number": "+51 (44) 483200",
+      "website": "https://www.agroindustriallaredo.com/",
+      "image": "laredo.svg",
+      "membership_level": "Bronze Membership"
+    },
+    {
+      "name": "Cartavio S.A.A.",
+      "address": "Plaza la Concordia Nº 18, Cartavio, La Libertad",
+      "phone_number": "+51 44 432039",
+      "website": "http://www.coazucar.com/ing/cartavio_nosotros.html",
+      "image": "cartavio.png",
+      "membership_level": "Gold Membership"
+    },
+    {
+      "name": "Casa Grande S.A.A.",
+      "address": "Av. Parque Fabrica (no number), Casa Grande, La Libertad",
+      "phone_number": "+51 44 433038",
+      "website": "http://www.coazucar.com/ing/casagrande_nosotros.html",
+      "image": "casagrande.png",
+      "membership_level": "Silver Membership"
+    },
+    {
+      "name": "Agribusiness San Jacinto S.A.A.",
+      "address": "Solidex Alto (no number), San Jacinto, Nepeña, Ancash",
+      "phone_number": "+51 43 463086",
+      "website": "http://www.coazucar.com/ing/sanjacinto_nosotros.html",
+      "image": "sanjacinto.png",
+      "membership_level": "Bronze Membership"
+    },
+    {
+      "name": "The Mill",
+      "address": "Planta La Troncal Via Naranjal, km 2.5, Ecuador",
+      "phone_number": "+593 7 2420075",
+      "website": "http://www.coazucar.com/ing/latroncal_nosotros.html",
+      "image": "troncal.png",
+      "membership_level": "Bronze Membership"
+    },
+    {
+      "name": "Agrolmos S.A.",
+      "address": "Av. Parque Fabrica Nro. S/N, Casa Grande, La Libertad",
+      "phone_number": "+51 44 443306",
+      "website": "http://www.coazucar.com/ing/agrolmos_nosotros.html",
+      "image": "agrolmos.png",
+      "membership_level": "Bronze Membership"
+    },
+    {
+      "name": "Agrolmos S.A.",
+      "address": "Av. Parque Fabrica Nro. S/N, Casa Grande, La Libertad",
+      "phone_number": "+51 44 443306",
+      "website": "http://www.coazucar.com/ing/agrolmos_nosotros.html",
+      "image": "agrolmos.png",
+      "membership_level": "Bronze Membership"
+    },
+    {
+      "name": "Agrolmos S.A.",
+      "address": "Av. Parque Fabrica Nro. S/N, Casa Grande, La Libertad",
+      "phone_number": "+51 44 443306",
+      "website": "http://www.coazucar.com/ing/agrolmos_nosotros.html",
+      "image": "agrolmos.png",
+      "membership_level": "Bronze Membership"
+    }
+  ]
+}

@@ -93,11 +93,11 @@ nav .navigation {
   list-style-type: none;
   padding: 0px;
   grid-column: 3/4;
-	display: none;
+  display: none;
 }
 
 nav .navigation.responsive {
-	display: block;
+  display: block;
 }
 
 nav ul li {
@@ -340,7 +340,7 @@ footer {
 }
 
 /* Discover */
-.discover h2 {
+.discover h2, .directory h2 {
   margin: 0 0 0.8rem;
 }
 
@@ -463,6 +463,100 @@ input[type=submit] {
   color: white;
   padding: 0.75rem 1.5rem;
 }
+
+
+/* Directory */
+
+.directory .menu {
+  float: right;
+}
+
+.directory .menu button {
+  background-color: #4d6e8a;
+  border: 0;
+  padding: .3rem .8rem;
+}
+
+.directory .menu button.active {
+  background-color: #113d62;
+}
+
+.directory #grid {
+   background-image: url("../images/grid.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 16px;
+}
+
+.directory #list {
+   background-image: url("../images/list.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: 16px;
+}
+
+.directory article, .directory article section {
+  margin: 0.75rem;
+}
+
+.directory article section {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #ccc;
+}
+
+.directory .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+}
+
+.directory .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.directory .list section {
+  display: flex;
+  align-items: center;
+}
+
+.directory .grid section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.directory .grid section > * {
+  margin: 0.1rem;
+}
+
+.directory .list section {
+  flex-direction: row;
+  justify-content: left;
+}
+
+.directory .list section > * {
+  margin: 0 1rem;
+  text-align: left;
+}
+
+.directory .list section img {
+  display: none; /* smaller viewports only */
+}
+
+.directory article section h3 {
+  font-size: 1.5rem;
+}
+
+.directory article section a {
+  font-size: 0.9rem;
+}
+
+.directory img {
+  height: 75px;
+  max-width: 100%;
+}
+
 
 @media only screen and (max-width: 37rem) {
   .content.join-page h1 {

@@ -84,4 +84,9 @@
   .discover .attractions article .description .title {
     width: 100%;
   }
+
+  /* Directory */
+  .directory .list section img {
+    display: block;
+  }
 }
