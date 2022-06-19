@@ -495,14 +495,14 @@ input[type=submit] {
    background-size: 16px;
 }
 
-.directory article, .directory article section {
+.directory article section {
   margin: 0.75rem;
 }
 
 .directory article section {
+  background-color: rgb(218, 216, 232);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
-  background-color: #ccc;
 }
 
 .directory .grid {
