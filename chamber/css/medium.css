@@ -86,7 +86,11 @@
   }
 
   /* Directory */
+  .directory .grid section img {
+    display: initial;
+  }
+
   .directory .list section img {
-    display: block;
+    display: none;
   }
 }

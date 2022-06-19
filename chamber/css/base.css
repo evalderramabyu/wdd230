@@ -502,6 +502,9 @@ input[type=submit] {
   margin: 0.75rem;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.directory article.grid section {
   min-height: 334px;
 }
 
@@ -550,6 +553,11 @@ input[type=submit] {
 
 .directory article section a {
   font-size: 0.9rem;
+}
+
+.directory img {
+  max-height: 80px;
+  max-width: 100%;
 }
 
 .directory img {
