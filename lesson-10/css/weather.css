@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Questrial&display=swap');
+
+
+:root {
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Questrial', sans-serif;
+  --paragraph-font: 'Nunito', sans-serif;
+}
+
+html {
+  font-family: var(--paragraph-font);
+}
+
+body {
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: var(--heading-font);
+  margin: 2rem 0 1rem;
+}
+
+main {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+main h2 {
+  background-color: aliceblue;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.7rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+main figure {
+  background-color: aliceblue;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin: 0;
+  padding-bottom: 0.7rem;
+}
+
+header, footer {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 20rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  body {
+    max-width: 30rem;
+  }
+  footer {
+    width: 30rem;
+  }
+}
