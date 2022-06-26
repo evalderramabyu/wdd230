@@ -278,7 +278,7 @@ footer {
 
 .hero .join-us {
   box-shadow: 0 0 6px rgb(60 103 166);
-  color: #fff;
+  color: #fff !important;
   position: absolute;
   bottom: 15px;
   right: 15px;
@@ -311,7 +311,6 @@ footer {
 .weather .subtitle {
   border-bottom: 1px solid #333;
   font-size: 1.1rem;
-  margin-top: 10px;
   margin-bottom: 10px;
   text-align: right;
 }
@@ -331,12 +330,13 @@ footer {
 }
 
 .join .join-us {
-  color: #fff;
+  color: #fff !important;
   width: 80%;
 }
 
-.join .join-us:hover {
+.join .join-us:hover, .hero .join-us:hover {
   background-color: #edf2f9;
+  color: #436f95 !important;
 }
 
 /* Discover */
