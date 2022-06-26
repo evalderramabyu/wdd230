@@ -4,7 +4,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#caption-desc');
 
 //API URL with arguments
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Lima&appid=87b0f2ce066fd9cb3261aeacfa987c28&units=metric';
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trujillo&appid=87b0f2ce066fd9cb3261aeacfa987c28&units=metric';
 
 async function apiFetch(apiUrl) {
   try {
