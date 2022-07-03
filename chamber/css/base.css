@@ -248,6 +248,18 @@ footer {
   text-align: center;
 }
 
+.text-info {
+  text-align: center;
+  max-width: 172px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logo-company {
+  max-width: 140px;
+  max-height: 33px;
+}
+
 .join-us {
   background-color: #5b8acd;
   border-radius: 0.6rem;
@@ -576,6 +588,50 @@ input[type=submit] {
 
 .directory .phone-number {
   font-size: 0.9rem;
+}
+
+.contact-page h3 {
+  width: 100%;
+}
+
+.contact-page .contact-options {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contact-page form {
+  background-color: rgba(255,255,255,1) !important;
+  box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0 !important;
+  -moz-box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
+  -webkit-box-shadow: rgb(0 0 0 / 25%) 0 3px 11px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.contact-page .direct-option {
+  padding: 1rem 2rem;
+}
+
+.contact-page .option-details {
+  background: #f9f8f8;
+  border-top: 2px solid #ffcda1;
+  border-bottom: 2px solid #ffcda1;
+  padding: 0 1rem 1.5rem;
+}
+
+.contact-page .direct-option, .contact-page form {
+  width: 50%;
+}
+
+.contact-page #feedback {
+  background: aliceblue;
+  color: #324266;
+  display: none;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 37rem) {

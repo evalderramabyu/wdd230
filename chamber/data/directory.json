@@ -6,7 +6,9 @@
       "phone_number": "+51 1 6421111",
       "website": "https://www.agroparamonga.com/",
       "image": "paramonga.svg",
-      "membership_level": "Gold Membership"
+      "membership_level": "Gold Membership",
+      "email": "contact@agroparamonga.com",
+      "slogan": "We will make you grow like never before"
     },
     {
       "name": "Agroindustrial Laredo",
@@ -14,7 +16,9 @@
       "phone_number": "+51 (44) 483200",
       "website": "https://www.agroindustriallaredo.com/",
       "image": "laredo.svg",
-      "membership_level": "Bronze Membership"
+      "membership_level": "Silver Membership",
+      "email": "contact@agroindustriallaredo.com",
+      "slogan": "We are a team, we are a family"
     },
     {
       "name": "Cartavio S.A.A.",
@@ -22,7 +26,9 @@
       "phone_number": "+51 44 432039",
       "website": "http://www.coazucar.com/ing/cartavio_nosotros.html",
       "image": "cartavio.png",
-      "membership_level": "Gold Membership"
+      "membership_level": "Gold Membership",
+      "email": "",
+      "slogan": ""
     },
     {
       "name": "Casa Grande S.A.A.",
@@ -30,7 +36,9 @@
       "phone_number": "+51 44 433038",
       "website": "http://www.coazucar.com/ing/casagrande_nosotros.html",
       "image": "casagrande.png",
-      "membership_level": "Silver Membership"
+      "membership_level": "Silver Membership",
+      "email": "",
+      "slogan": ""
     },
     {
       "name": "Agribusiness San Jacinto S.A.A.",
@@ -38,7 +46,9 @@
       "phone_number": "+51 43 463086",
       "website": "http://www.coazucar.com/ing/sanjacinto_nosotros.html",
       "image": "sanjacinto.png",
-      "membership_level": "Bronze Membership"
+      "membership_level": "Bronze Membership",
+      "email": "",
+      "slogan": ""
     },
     {
       "name": "The Mill",
@@ -46,7 +56,9 @@
       "phone_number": "+593 7 2420075",
       "website": "http://www.coazucar.com/ing/latroncal_nosotros.html",
       "image": "troncal.png",
-      "membership_level": "Bronze Membership"
+      "membership_level": "Bronze Membership",
+      "email": "",
+      "slogan": ""
     },
     {
       "name": "Agrolmos S.A.",
@@ -54,7 +66,9 @@
       "phone_number": "+51 44 443306",
       "website": "http://www.coazucar.com/ing/agrolmos_nosotros.html",
       "image": "agrolmos.png",
-      "membership_level": "Bronze Membership"
+      "membership_level": "Bronze Membership",
+      "email": "",
+      "slogan": ""
     },
     {
       "name": "Caña Brava",
@@ -62,7 +76,9 @@
       "phone_number": "+51 1 7193300",
       "website": "http://www.canabrava.com.pe/",
       "image": "canabrava.png",
-      "membership_level": "Bronze Membership"
+      "membership_level": "Silver Membership",
+      "email": "contact@canabrava.com.pe",
+      "slogan": "We make your vision our vision"
     },
     {
       "name": "Agrarian Company Chiquitoy S.A.",
@@ -70,7 +86,9 @@
       "phone_number": "+51 44 442150",
       "website": "http://www.coazucar.com/esp/chiquitoy_nosotros.html",
       "image": "chiquitoy.png",
-      "membership_level": "Bronze Membership"
+      "membership_level": "Bronze Membership",
+      "email": "",
+      "slogan": ""
     }
   ]
 }

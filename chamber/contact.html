@@ -44,12 +44,31 @@
     </header>
 
     <main>
-      <div class="content join-page">
-        <h1 class="text-center">Join Us</h1>
+      <div class="content contact-page">
+        <h1 class="text-center">Contact Us</h1>
 
-        <form method="get" action="thankyou.html">
-          <fieldset>
-            <legend>User Information</legend>
+        <div id="feedback"></div>
+
+        <div class="contact-options">
+          <div class="direct-option">
+            <div class="option-details">
+              <h3>Visit us</h3>
+
+              <b>Address</b><br>
+              Av. Husares de Junin 455<br>
+              Trujillo<br>
+              La Libertad, Perú<br><br>
+
+              <b>Phone</b><br>
+              +51 (1) 325-0610<br><br>
+
+              <b>Email</b><br>
+              contact@sugarcanechamber.com
+            </div>
+          </div>
+
+          <form method="post" action="#">
+            <h3>User Information</h3>
 
             <label class="required" for="first_name">First Name</label>
             <input class="form-control" type="text" name="first_name" id="first_name" required="required" autofocus="autofocus">
@@ -57,36 +76,21 @@
             <label class="required" for="last_name">Last Name</label>
             <input class="form-control" type="text" name="last_name" id="last_name" required="required">
 
-            <label for="business_position">Business Position</label>
-            <input class="form-control" type="text" name="business_position" id="business_position" pattern="[a-zA-Z-\s]{7,}" title="Only include alpha characters, hyphens, and spaces and must contain a minimum of 7 characters">
-
             <label class="required" for="email">Email</label>
             <input class="form-control" type="email" name="email" id="email" required="required" placeholder="email@address.com">
 
-            <label class="required" for="phone_number">Phone Number</label>
-            <input class="form-control" type="tel" name="phone_number" id="phone_number" required="required">
+            <label for="phone_number">Phone Number</label>
+            <input class="form-control" type="tel" name="phone_number" id="phone_number">
 
-            <label class="required" for="business_name">Business Name</label>
+            <label class="required" for="business_name">Company Name</label>
             <input class="form-control" type="text" name="business_name" id="business_name" required="required">
-          </fieldset>
 
-          <fieldset>
-              <legend>Membership</legend>
-              <label class="radio-label"><input type="radio" name="membership" value="np"> NP Membership</label>
-              <label class="radio-label"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-              <label class="radio-label"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-              <label class="radio-label"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-          </fieldset>
+            <label class="required" for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" required="required" placeholder=""></textarea>
 
-          <fieldset>
-            <legend>Business Description</legend>
-            <textarea class="form-control" name="description" id="description"></textarea>
-          </fieldset>
-
-          <input type="hidden" name="current_time" id="current_time">
-
-          <input type="submit" value="Join the Chamber">
-        </form>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
     </main>
 
@@ -112,5 +116,29 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById('feedback');
+      // get the form so we can read what was entered in it.
+      const formElement = document.forms[0];
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener('submit', function(e) {
+          // stop the form from doing the default action
+          e.preventDefault();
+          // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+          feedbackElement.innerHTML = 'Hello '+ formElement.first_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+          // make the feedback element visible.
+          feedbackElement.style.display = "block";
+          // add a class to move everything down so our message doesn't cover it.
+          document.body.classList.toggle('moveDown');
+
+          formElement.first_name.value = '';
+          formElement.last_name.value = '';
+          formElement.email.value = '';
+          formElement.phone_number.value = '';
+          formElement.business_name.value = '';
+          formElement.message.value = '';
+      });
+    </script>
   </body>
 </html>
