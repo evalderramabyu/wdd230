@@ -117,4 +117,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
+  /* Contact */
+  .contact-page .direct-option {
+    padding: 1rem 2rem;
+  }
+
+  .contact-page form {
+    margin: 0 2rem;
+  }
 }

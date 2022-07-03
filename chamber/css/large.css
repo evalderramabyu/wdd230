@@ -85,4 +85,18 @@
   form {
     width: 70%;
   }
+
+  /* Contact */
+  .contact-page .contact-options {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .contact-page .direct-option, .contact-page form {
+    width: 50%;
+  }
+
+  .contact-page form {
+    margin: 0;
+  }
 }

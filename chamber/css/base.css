@@ -590,13 +590,15 @@ input[type=submit] {
   font-size: 0.9rem;
 }
 
+
+/* Contact */
 .contact-page h3 {
   width: 100%;
 }
 
 .contact-page .contact-options {
-  display: flex;
-  flex-direction: row-reverse;
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
 }
 
 .contact-page form {
@@ -607,10 +609,11 @@ input[type=submit] {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
+  margin: 0 1rem;
 }
 
 .contact-page .direct-option {
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .contact-page .option-details {
@@ -618,10 +621,6 @@ input[type=submit] {
   border-top: 2px solid #ffcda1;
   border-bottom: 2px solid #ffcda1;
   padding: 0 1rem 1.5rem;
-}
-
-.contact-page .direct-option, .contact-page form {
-  width: 50%;
 }
 
 .contact-page #feedback {
