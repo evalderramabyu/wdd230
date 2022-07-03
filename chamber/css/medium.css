@@ -12,8 +12,16 @@
     grid-template-rows: repeat(5, 1fr);
   }
 
+  .content.home section {
+    overflow: hidden;
+  }
+
   .hero {
     grid-column: 1/3;
+  }
+
+  .hero .header {
+    right: 9%;
   }
 
   .join {

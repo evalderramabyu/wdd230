@@ -272,7 +272,11 @@ footer {
 }
 
 .hero .header {
+  background: rgba(0, 0, 0, 0.1);
   font-size: 1.3rem;
+  padding: 0 0.5rem;
+  position: absolute;
+  right: 3%;
   text-align: left;
 }
 
@@ -549,7 +553,11 @@ input[type=submit] {
 }
 
 .directory article section a {
+  color: #277595;
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
 }
 
 .directory img {
