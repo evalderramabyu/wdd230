@@ -72,7 +72,11 @@ if (document.querySelector('.content.discover')) {
 }
 
 if (document.querySelector('.content.join-page')) {
-    document.querySelector('#current_time').innerHTML = new Date().toLocaleString();
+    const now = new Date(),
+          date = now.toISOString().slice(0, 10);
+
+    document.querySelector('#current_date').value = date;
+    document.querySelector('#current_time').value = formatTime(now);
 }
 
 if (document.querySelector('.content.thanks')) {
@@ -80,4 +84,15 @@ if (document.querySelector('.content.thanks')) {
     const urlParams = new URLSearchParams(queryString);
     const firstName = urlParams.get('first_name')
     document.querySelector('#first_name').innerHTML = firstName;
+}
+
+function formatTime(date) {
+    let hour = date.getHours(),
+        minute = date.getMinutes(),
+        second = date.getSeconds(),
+        hourFormatted = hour < 10 ? "0" + hour : hour,
+        minuteFormatted = minute < 10 ? "0" + minute : minute,
+        secondFormatted = second < 10 ? "0" + second : second;
+
+    return hourFormatted + ":" + minuteFormatted + ":" + secondFormatted;
 }
