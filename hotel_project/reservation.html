@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>The Temple Inn & Suites</title>
+    <meta name="description" content="Assignment portal for Edgar Valderrama in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="banner">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+    <header>
+      <div class="logo-info">
+        <a href="/wdd230/hotel_project"><img class="logo" src="images/logo.webp" alt="The Temple Inn & Suites"></a>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="temple.html">Temple</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="ham"><span>&#9776;</span></div>
+
+      <div class="current-date"></div>
+    </header>
+
+    <main>
+      <div class="content join-page">
+        <h1 class="text-center">Join Us</h1>
+
+        <form method="get" action="thankyou.html">
+          <fieldset>
+            <legend>User Information</legend>
+
+            <label class="required" for="first_name">First Name</label>
+            <input class="form-control" type="text" name="first_name" id="first_name" required="required" autofocus="autofocus">
+
+            <label class="required" for="last_name">Last Name</label>
+            <input class="form-control" type="text" name="last_name" id="last_name" required="required">
+
+            <label for="business_position">Business Position</label>
+            <input class="form-control" type="text" name="business_position" id="business_position" pattern="[a-zA-Z-\s]{7,}" title="Only include alpha characters, hyphens, and spaces and must contain a minimum of 7 characters">
+
+            <label class="required" for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" required="required" placeholder="email@address.com">
+
+            <label class="required" for="phone_number">Phone Number</label>
+            <input class="form-control" type="tel" name="phone_number" id="phone_number" required="required">
+
+            <label class="required" for="business_name">Business Name</label>
+            <input class="form-control" type="text" name="business_name" id="business_name" required="required">
+          </fieldset>
+
+          <fieldset>
+              <legend>Membership</legend>
+              <label class="radio-label"><input type="radio" name="membership" value="np"> NP Membership</label>
+              <label class="radio-label"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+              <label class="radio-label"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+              <label class="radio-label"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Business Description</legend>
+            <textarea class="form-control" name="description" id="description"></textarea>
+          </fieldset>
+
+          <input type="hidden" name="current_date" id="current_date">
+          <input type="hidden" name="current_time" id="current_time">
+
+          <input type="submit" value="Join the Chamber">
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer">
+        <div class="main-l">
+          <div class="social-media">
+            <p>Follow us:</p>
+            <a href="www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="main-c">
+          <img src="images/logo-white.png" alt="logo">
+        </div>
+        <div class="main-r">
+          <p>Reservations:</p>
+          <p>contact@temple_inn.com</p>
+          <p>801-358-7000</p>
+        </div>
+      </div>
+
+      <div class="content-footer">
+        <span class="credits">&copy;<span class="current-year"></span> The Temple Inn & Suites</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

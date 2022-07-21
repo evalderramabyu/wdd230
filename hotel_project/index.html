@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>The Temple Inn & Suites</title>
+    <meta name="description" content="Assignment portal for Edgar Valderrama in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div id="banner">
+      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+    </div>
+    <header>
+      <div class="logo-info">
+        <a href="/wdd230/hotel_project"><img class="logo" src="images/logo.webp" alt="The Temple Inn & Suites"></a>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="temple.html">Temple</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="ham"><span>&#9776;</span></div>
+
+      <div class="current-date"></div>
+    </header>
+
+    <main>
+      <div class="content home">
+        <section class="hero">
+          <picture>
+            <source srcset="images/wdd230-org500.jpg" media="(min-width: 200px) and (max-width: 500px)">
+            <source srcset="images/wdd230-org800.jpg" media="(min-width: 501px) and (max-width: 800px)">
+            <source srcset="images/wdd230-org1100.jpg" media="(min-width: 801px) and (max-width: 1100px)">
+            <img src="images/wdd230-org.jpg" alt="Sugar Cane">
+          </picture>
+
+          <h2 class="header">Welcome to Sugar Cane</h2>
+          <a href="#" class="join-us">Join the Chamber</a>
+        </section>
+
+        <section class="event">
+          <h2 class="header">Ribbon Cutting</h2>
+          <div class="subtitle">💎 The Diamond Shack</div>
+
+          Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.
+          &nbsp;&nbsp; <a href="#">more info...</a>
+        </section>
+
+        <section class="weather">
+          <h2 class="header">Weather</h2>
+
+          <div class="forecast">
+            <img src="images/weather.png" id="weather-icon" alt="Weather" width="70">
+            <div class="forecast-value"><span id="temperature">--</span>°C</div>
+          </div>
+
+          <div id="caption-desc" class="subtitle">Partly Cloudy</div>
+          <div class="weather-elements">
+            <div class="element">Wind Speed:</div>
+            <div class="element-value"><span id="wind-speed"></span> km/h</div>
+          </div>
+          <div class="weather-elements">
+            <div class="element">Wind Chill:</div>
+            <div class="element-value"><span id="wind-chill"></span></div>
+          </div>
+        </section>
+
+        <section class="join">
+          <a href="#" class="join-us">Join Us!</a>
+          <br>
+
+          <div class="text-center">
+            Discover how to join the chamber of commerce and how it will benefit your organization!
+          </div>
+        </section>
+
+        <section class="news">
+          <h2 class="header">News Release</h2>
+          <br>
+
+          <div class="text-center">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </div>
+        </section>
+
+        <section class="spotlights">
+          <div>
+            <div class="header">Thankful Transport</div>
+            <img src="images/transport.png" alt="Weather" width="60">
+
+            <div class="subtitle">"We get it there for you"</div>
+
+            <div class="text-center">hello@thankfultransport.com</div>
+            <div class="text-center">+999-999-999 Website</div>
+          </div>
+          <div>
+            <div class="header">Code Primera</div>
+            <img src="images/code_primera.png" alt="Weather" width="50">
+
+            <div class="subtitle">An after school coding instructional program.</div>
+
+            <div class="text-center">contact@codeprima.com</div>
+            <div class="text-center">+999-999-999 | Website</div>
+          </div>
+          <div>
+            <div class="header">Build A Treefort</div>
+            <img src="images/treefort.png" alt="Weather" height="50">
+
+            <div class="subtitle">Over 1000 Plans!</div>
+
+            <div class="text-center">builda@treefort.com</div>
+            <div class="text-center">+888-888-888 Website</div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="location">
+        <div class="map">
+          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1000&amp;height=380&amp;hl=en&amp;q=450 South Main Street, Salt Lake City, Utah 83101&amp;t=p&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:380px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:380px;}.gmap_iframe {height:380px!important;}</style></div>
+        </div>
+        <div class="address">
+          <p>ADDRESS:</p>
+          <p>450 South Main Street, Salt Lake City, Utah 83101</p>
+        </div>
+      </div>
+      <div class="main-footer">
+        <div class="main-l">
+          <div class="social-media">
+            <p>Follow us:</p>
+            <a href="www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="www.twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+          </div>
+        </div>
+        <div class="main-c">
+          <img src="images/logo-white.png" alt="logo">
+        </div>
+        <div class="main-r">
+          <p>Reservations:</p>
+          <p>contact@temple_inn.com</p>
+          <p>801-358-7000</p>
+        </div>
+      </div>
+
+      <div class="content-footer">
+        <span class="credits">&copy;<span class="current-year"></span> The Temple Inn & Suites</span>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/spotlight.js"></script>
+  </body>
+</html>
