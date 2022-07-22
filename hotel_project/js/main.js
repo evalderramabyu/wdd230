@@ -2,7 +2,7 @@ const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 	dateStyle: "full"
 }).format(now);
-document.querySelector('.current-date').innerHTML = fulldateUK;
+// document.querySelector('.current-date').innerHTML = fulldateUK;
 
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')

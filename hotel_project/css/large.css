@@ -9,7 +9,7 @@
   }
 
   main {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
   }
 
   nav {
@@ -33,6 +33,37 @@
 
   .ham {
     display: none;
+  }
+
+  .section-1 {
+    display: grid;
+    margin: auto;
+    width: 85%;
+  }
+
+  .section-1 picture {
+    text-align: center;
+  }
+
+  .section-1 .service-desc {
+    background-color: #EDF0F4;
+    padding: 3rem;
+    margin-left: 6px;
+    text-align: center;
+  }
+
+  .section-1 .service-desc h2 {
+    text-align: center;
+  }
+
+  .section-1 .service-desc span {
+    display: block;
+    margin: 3rem;
+  }
+
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
   }
 
   .content.home {

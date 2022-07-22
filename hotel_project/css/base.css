@@ -80,6 +80,16 @@ header h3:last-child {
   margin-top: -0.6rem;
 }
 
+.reservation {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.reservation p {
+  font-size: .9rem;
+  margin-bottom: 0;
+}
+
 .ham {
   color: var(--nav-link-color);
   grid-column: 3/4;
@@ -132,6 +142,77 @@ nav ul li:hover {
   background-color: #ddd3c4;
 }
 
+hr {
+  width: 95%;
+}
+
+.section-1 {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+
+.section-1 picture {
+  display: none;
+  text-align: center;
+}
+
+.section-1 img {
+  width: 100%;
+}
+
+.section-1 .service-desc {
+  background-color: #EDF0F4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-1 .service-desc h2 {
+  text-align: center;
+}
+
+.section-1 .service-desc span {
+  display: block;
+  margin: 2rem;
+}
+
+.section-1 .service-desc button, .section-2 .service-desc button {
+  background-color: #242C35;
+  border: 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: .8rem;
+  padding: 0.4rem 1.4rem;
+}
+
+.section-2 {
+  margin: 2rem auto;
+}
+
+.section-2 .flexible-desc {
+  background-color: #74272a;
+  color: #fff;
+  padding: 2rem;
+}
+
+.section-2 img {
+  width: 100%;
+}
+
+.section-2 .service-desc {
+  background-color: #EDF0F4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-2 .service-desc ul {
+  text-align: left;
+}
+
+.small {
+  font-size: .8rem;
+}
+
 .social-media {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -153,7 +234,7 @@ nav ul li:hover {
 }
 
 main {
-  padding: 1rem 0.2rem;
+  /* padding: 1rem 0.2rem; */
 }
 
 .content.home {

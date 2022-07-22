@@ -4,7 +4,35 @@
   }
 
   main {
-    padding: 1rem 0.2rem;
+    /* padding: 1rem 0.2rem; */
+  }
+
+  .reservation {
+    display: none;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .section-1 {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: 98%;
+  }
+
+  .section-1 picture {
+    display: block;
+  }
+
+  .section-1 .service-desc span {
+    margin: 2rem;
+  }
+
+  .section-2 {
+    display: grid;
   }
 
   .content.home {
