@@ -7,6 +7,14 @@
   justify-content: space-between;
 }
 
+.slide-box picture {
+  width: 100%;
+}
+
+.slide-box img {
+  width: 100%;
+}
+
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
