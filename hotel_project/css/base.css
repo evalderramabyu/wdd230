@@ -56,6 +56,10 @@ header  {
   grid-template-columns: max-content 1fr;
 }
 
+h1, h2, h3 {
+  font-family: var(--heading-font);
+}
+
 .logo-info {
   grid-column: 1/2;
   display: flex;
@@ -126,7 +130,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  color: #f6f5c3;
+  color: var(--nav-link-color);
   position: relative;
 }
 
@@ -136,6 +140,11 @@ nav ul li a.active:before {
   border-bottom: 2.5px solid #f6f5c3;
   position: absolute;
   width: 100%;
+}
+
+nav ul li a:hover {
+  color: var(--nav-link-color);
+  text-decoration: none;
 }
 
 nav ul li:hover {
@@ -759,8 +768,7 @@ input[type=submit] {
 }
 
 .contact-page .contact-options {
-  /* display: flex; */
-  /* flex-direction: row-reverse; */
+  margin-bottom: 1rem;
 }
 
 .contact-page form {

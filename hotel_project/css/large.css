@@ -55,6 +55,7 @@
   }
 
   .section-1 .service-desc h2 {
+    margin-bottom: -7px;
     text-align: center;
   }
 
@@ -166,10 +167,6 @@
 
   .contact-page .direct-option, .contact-page form {
     width: 50%;
-  }
-
-  .contact-page form {
-    margin: 0;
   }
 
   footer .location .map {
