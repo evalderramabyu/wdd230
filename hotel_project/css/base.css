@@ -185,13 +185,18 @@ hr {
   margin: 2rem;
 }
 
-.section-1 .service-desc button, .section-2 .service-desc button {
+.service-desc .button {
   background-color: #242C35;
   border: 0;
   border-radius: 0.2rem;
   color: #fff;
   font-size: .8rem;
-  padding: 0.4rem 1.4rem;
+  padding: .5rem 1.4rem;
+  text-decoration: none;
+}
+
+.service-desc .button:hover {
+  background-color: #354353;
 }
 
 .section-2 {
