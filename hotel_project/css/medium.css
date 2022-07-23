@@ -232,5 +232,23 @@
   .temples {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 85%;
-    }
+  }
+
+  .temples h6 {
+    font-size: 1.2rem;
+    padding-left: 2rem;
+  }
+
+  .temples .contact span {
+    font-size: .95rem;
+    padding-left: 2rem;
+  }
+
+  .temples .services {
+    padding-left: 2rem;
+  }
+
+  .temples .services ul {
+    font-size: 1.1rem;
+  }
 }
