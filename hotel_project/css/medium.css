@@ -223,4 +223,8 @@
   .contact-page form {
     margin: 0 2rem;
   }
+
+  .thanks, .directory {
+    height: calc(100vh - 286px);
+  }
 }
