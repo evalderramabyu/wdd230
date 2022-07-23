@@ -182,4 +182,8 @@
     margin: auto;
     width: 80%;
   }
+
+  .thanks {
+    height: calc(100vh - 286px);
+  }
 }

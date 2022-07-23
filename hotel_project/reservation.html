@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <div id="banner">
-      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-    </div>
     <header>
       <div class="logo-info">
         <a href="/wdd230/hotel_project"><img class="logo" src="images/logo.webp" alt="The Temple Inn & Suites"></a>
@@ -34,20 +31,89 @@
 
     <main>
       <div class="content join-page">
-        <h1 class="text-center">Join Us</h1>
+        <h1 class="text-center">Reservation</h1>
 
         <form method="get" action="thankyou.html">
-          <fieldset>
-            <legend>User Information</legend>
+          <div class="row booking">
+              <div class="date-picker-content">
+                <div class="form-group">
+                    <label class="date-label" for="arrival">Arrival Date</label>
+                    <div class="date-picker-input-group">
+                      <input class="form-control" id="arrival" name="arrival" placeholder="Arrival" startdatefield="" required="required">
+                      <span class="input-group-addon">
+                          <img src="images/calendar.png" alt="logo" width="20">
+                      </span>
+                    </div>
+                </div>
 
+                <div class="form-group">
+                    <label class="date-label" for="departure">Departure Date</label>
+                    <div class="date-picker-input-group">
+                      <input class="form-control" enddatefield="" id="departure" name="departure" placeholder="Departure" required="required">
+                      <span class="input-group-addon">
+                          <img src="images/calendar.png" alt="logo" width="20">
+                      </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="row booking">
+            <div class="form-group">
+                <label for="numRooms">Rooms</label>
+                <select class="form-control c-select ng-pristine ng-valid ng-touched" id="numRooms" name="numRooms" required="required">
+                    <option value="1">
+                        1
+                    </option><option value="2">
+                        2
+                    </option><option value="3">
+                        3
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="numAdults">Adults</label>
+                <select class="form-control c-select ng-pristine ng-valid ng-touched" id="numAdults" name="Adults" required="required">
+                    <option value="1">
+                        1
+                    </option><option value="2">
+                        2
+                    </option><option value="3">
+                        3
+                    </option><option value="4">
+                        4
+                    </option><option value="5">
+                        5
+                    </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="children">Children</label>
+                <select class="form-control c-select ng-untouched ng-pristine ng-valid" id="children" name="Children">
+                    <option value="0">
+                        0
+                    </option><option value="1">
+                        1
+                    </option><option value="2">
+                        2
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="promo-code-label" for="promoCode">Promo Code</label>
+                <input class="form-control ng-pristine ng-valid ng-touched" id="promoCode" name="promoCode">
+            </div>
+          </div>
+
+          <h4>Contact Information</h4>
+          <div class="row">
             <label class="required" for="first_name">First Name</label>
             <input class="form-control" type="text" name="first_name" id="first_name" required="required" autofocus="autofocus">
 
             <label class="required" for="last_name">Last Name</label>
             <input class="form-control" type="text" name="last_name" id="last_name" required="required">
-
-            <label for="business_position">Business Position</label>
-            <input class="form-control" type="text" name="business_position" id="business_position" pattern="[a-zA-Z-\s]{7,}" title="Only include alpha characters, hyphens, and spaces and must contain a minimum of 7 characters">
 
             <label class="required" for="email">Email</label>
             <input class="form-control" type="email" name="email" id="email" required="required" placeholder="email@address.com">
@@ -55,27 +121,19 @@
             <label class="required" for="phone_number">Phone Number</label>
             <input class="form-control" type="tel" name="phone_number" id="phone_number" required="required">
 
-            <label class="required" for="business_name">Business Name</label>
-            <input class="form-control" type="text" name="business_name" id="business_name" required="required">
-          </fieldset>
+            <fieldset>
+                <legend>User type</legend>
+                <label class="radio-label"><input type="radio" name="membership" value="np"> Temple workers</label>
+                <label class="radio-label"><input type="radio" name="membership" value="bronze"> Temple patrons</label>
+                <label class="radio-label"><input type="radio" name="membership" value="silver"> Other</label>
+            </fieldset>
+          </div>
 
-          <fieldset>
-              <legend>Membership</legend>
-              <label class="radio-label"><input type="radio" name="membership" value="np"> NP Membership</label>
-              <label class="radio-label"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-              <label class="radio-label"><input type="radio" name="membership" value="silver"> Silver Membership</label>
-              <label class="radio-label"><input type="radio" name="membership" value="gold"> Gold Membership</label>
-          </fieldset>
-
-          <fieldset>
-            <legend>Business Description</legend>
-            <textarea class="form-control" name="description" id="description"></textarea>
-          </fieldset>
-
-          <input type="hidden" name="current_date" id="current_date">
-          <input type="hidden" name="current_time" id="current_time">
-
-          <input type="submit" value="Join the Chamber">
+          <div class="row">
+            <div class="form-group">
+                <input type="submit" value="Book Now">
+            </div>
+          </div>
         </form>
       </div>
     </main>

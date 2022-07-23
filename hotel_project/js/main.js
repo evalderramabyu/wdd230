@@ -70,14 +70,6 @@ if (document.querySelector('.content.discover')) {
     }
 }
 
-if (document.querySelector('.content.join-page')) {
-    const now = new Date(),
-          date = now.toISOString().slice(0, 10);
-
-    document.querySelector('#current_date').value = date;
-    document.querySelector('#current_time').value = formatTime(now);
-}
-
 if (document.querySelector('.content.thanks')) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);

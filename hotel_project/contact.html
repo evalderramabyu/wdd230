@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
-    <div id="banner">
-      🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
-    </div>
     <header>
       <div class="logo-info">
         <a href="/wdd230/hotel_project"><img class="logo" src="images/logo.webp" alt="The Temple Inn & Suites"></a>
@@ -69,7 +66,7 @@
             <input class="form-control" type="email" name="email" id="email" required="required" placeholder="email@address.com">
 
             <label for="phone_number">Phone Number</label>
-            <input class="form-control" type="tel" name="phone_number" id="phone_number" pattern="[789]\d{9,9}" title="Please enter your phone number in the format XXX-XXX-XXXX">
+            <input class="form-control" type="tel" name="phone_number" id="phone_number" pattern="[789]\d{9,9}" title="Please enter your phone number in the format XXX-XXX-XXXX and must start with a digit between 7 and 9">
 
             <label class="required" for="message">Message</label>
             <textarea class="form-control" id="message" name="message" required="required" placeholder=""></textarea>
@@ -126,7 +123,6 @@
           formElement.last_name.value = '';
           formElement.email.value = '';
           formElement.phone_number.value = '';
-          formElement.business_name.value = '';
           formElement.message.value = '';
       });
     </script>

@@ -658,11 +658,55 @@ footer .location .address {
   display: none;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-group {
+  margin-right: 12px;
+}
+
+.date-picker-content {
+  display: flex;
+}
+
+.date-picker-input-group {
+  display: flex;
+  position: relative;
+}
+
+.input-group-addon {
+  position: absolute;
+  right: 4px;
+  top: 10px;
+}
+
+
+.date-picker-content .form-group {
+  margin-right: 38px;
+}
+
 .radio-label {
   display: block;
   margin: 0.2rem;
   padding-left: 0.5rem;
   width: 100%;
+}
+
+.booking {
+  background-color: #EDF0F4;
+  margin-left: -7px;
+  padding-left: 10px;
+}
+
+.booking:first-child {
+  padding-top: 1rem;
 }
 
 form {
@@ -847,7 +891,7 @@ input[type=submit] {
   margin-bottom: 1rem;
 }
 
-.contact-page form {
+.contact-page form, .join-page form {
   background-color: rgba(255,255,255,1) !important;
   box-shadow: rgb(0 0 0 / 25%) 0 3px 11px 0 !important;
   -moz-box-shadow: rgba(0,0,0,0.25) 0 3px 11px 0 !important;
@@ -855,6 +899,9 @@ input[type=submit] {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
+}
+
+.contact-page form {
   margin: 0 1rem;
 }
 
@@ -877,6 +924,10 @@ input[type=submit] {
   margin-bottom: 1rem;
   padding: 1rem;
   text-align: center;
+}
+
+.content.join-page form {
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 37rem) {
