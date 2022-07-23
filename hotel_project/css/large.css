@@ -36,6 +36,11 @@
     display: none;
   }
 
+  .book-now {
+    right: 150px;
+    top: 35px;
+  }
+
   .section-1 {
     grid-gap: 5rem;
     margin: auto;
@@ -101,6 +106,10 @@
   .section-3 .t6 {
     grid-column: 5/6;
     grid-row: 2/3;
+  }
+
+  .section-4 {
+    width: 78%;
   }
 
   .content.home {

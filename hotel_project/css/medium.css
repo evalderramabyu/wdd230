@@ -11,6 +11,13 @@
     display: none;
   }
 
+  .book-now {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    right: 80px;
+    top: 30px;
+  }
+
   hr {
     width: 90%;
   }
@@ -45,6 +52,7 @@
   .section-3 .t1 {
     grid-column: 1/2;
     border-bottom: 1px solid #333;
+    margin-right: 0;
   }
 
   .section-3 .t2 {
@@ -70,6 +78,22 @@
   .section-3 .t6 {
     grid-column: 4/5;
     grid-row: 2/3;
+  }
+
+  .section-4 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 96%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+
+  .section-4 section:first-child {
+    grid-column: 1/2;
+  }
+
+  .section-4 section:last-child {
+    grid-column: 2/3;
   }
 
   .content.home {

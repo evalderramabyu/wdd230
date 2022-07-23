@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.carousel-inner {
+  position: relative;
+}
+
 .slide-box {
   display: flex;
   justify-content: space-between;

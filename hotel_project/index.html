@@ -49,6 +49,8 @@
           <li data-target="#carousel" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
+          <a href="reservation.html" class="book-now">Book Now</a>
+
           <div class="carousel-item active">
             <div class="">
               <div class="slide-box">
@@ -120,95 +122,6 @@
         </a>
       </div>
 
-      <div class="content home d-none">
-        <section class="hero">
-          <picture>
-            <source srcset="images/wdd230-org500.jpg" media="(min-width: 200px) and (max-width: 500px)">
-            <source srcset="images/wdd230-org800.jpg" media="(min-width: 501px) and (max-width: 800px)">
-            <source srcset="images/wdd230-org1100.jpg" media="(min-width: 801px) and (max-width: 1100px)">
-            <img src="images/wdd230-org.jpg" alt="Sugar Cane">
-          </picture>
-
-          <h2 class="header">Welcome to Sugar Cane</h2>
-          <a href="#" class="join-us">Join the Chamber</a>
-        </section>
-
-        <section class="event">
-          <h2 class="header">Ribbon Cutting</h2>
-          <div class="subtitle">💎 The Diamond Shack</div>
-
-          Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.
-          &nbsp;&nbsp; <a href="#">more info...</a>
-        </section>
-
-        <section class="weather">
-          <h2 class="header">Weather</h2>
-
-          <div class="forecast">
-            <img src="images/weather.png" id="weather-icon" alt="Weather" width="70">
-            <div class="forecast-value"><span id="temperature">--</span>°C</div>
-          </div>
-
-          <div id="caption-desc" class="subtitle">Partly Cloudy</div>
-          <div class="weather-elements">
-            <div class="element">Wind Speed:</div>
-            <div class="element-value"><span id="wind-speed"></span> km/h</div>
-          </div>
-          <div class="weather-elements">
-            <div class="element">Wind Chill:</div>
-            <div class="element-value"><span id="wind-chill"></span></div>
-          </div>
-        </section>
-
-        <section class="join">
-          <a href="#" class="join-us">Join Us!</a>
-          <br>
-
-          <div class="text-center">
-            Discover how to join the chamber of commerce and how it will benefit your organization!
-          </div>
-        </section>
-
-        <section class="news">
-          <h2 class="header">News Release</h2>
-          <br>
-
-          <div class="text-center">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </div>
-        </section>
-
-        <section class="spotlights">
-          <div>
-            <div class="header">Thankful Transport</div>
-            <img src="images/transport.png" alt="Weather" width="60">
-
-            <div class="subtitle">"We get it there for you"</div>
-
-            <div class="text-center">hello@thankfultransport.com</div>
-            <div class="text-center">+999-999-999 Website</div>
-          </div>
-          <div>
-            <div class="header">Code Primera</div>
-            <img src="images/code_primera.png" alt="Weather" width="50">
-
-            <div class="subtitle">An after school coding instructional program.</div>
-
-            <div class="text-center">contact@codeprima.com</div>
-            <div class="text-center">+999-999-999 | Website</div>
-          </div>
-          <div>
-            <div class="header">Build A Treefort</div>
-            <img src="images/treefort.png" alt="Weather" height="50">
-
-            <div class="subtitle">Over 1000 Plans!</div>
-
-            <div class="text-center">builda@treefort.com</div>
-            <div class="text-center">+888-888-888 Website</div>
-          </div>
-        </section>
-      </div>
-
       <hr>
 
       <div class="section-1">
@@ -269,6 +182,54 @@
           <img src="images/stories/story_4.jpeg" alt="Story">
         </div>
       </div>
+
+      <div class="section-4">
+        <section class="weather">
+          <h2>Weather</h2>
+
+          <div class="current-temp">
+            <img src="images/weather.png" id="weather-icon" alt="Weather" width="70">
+            <div class="current-temp-value"><span id="temperature">--</span>°C</div>
+          </div>
+
+          <div id="caption-desc" class="subtitle">Partly Cloudy</div>
+          <div class="weather-elements">
+            <div class="element">Humidity:</div>
+            <div class="element-value"><span id="humidity"></span>%</div>
+          </div>
+          <div class="weather-elements">
+            <div class="element">Wind Speed:</div>
+            <div class="element-value"><span id="wind-speed"></span> Km/h</div>
+          </div>
+        </section>
+
+        <section class="weather forecasting">
+          <h2>Forecast</h2>
+          <div class="forecast-days">
+            <div id="day1">
+              <div class="cur-date"></div>
+              <div class="current-temp">
+                <img src="" class="weather-icon" alt="Weather" width="70">
+                <div class="current-temp-value"><span class="temperature">--</span></div>
+              </div>
+            </div>
+            <div id="day2">
+              <div class="cur-date"></div>
+              <div class="current-temp">
+                <img src="" class="weather-icon" alt="Weather" width="70">
+                <div class="current-temp-value"><span class="temperature">--</span></div>
+              </div>
+            </div>
+            <div id="day3">
+              <div class="cur-date"></div>
+              <div class="current-temp">
+                <img src="" class="weather-icon" alt="Weather" width="70">
+                <div class="current-temp-value"><span class="temperature">--</span></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -307,7 +268,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/spotlight.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
   </body>

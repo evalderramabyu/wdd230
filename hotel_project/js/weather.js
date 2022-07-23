@@ -1,17 +1,19 @@
 const currentTemp = document.querySelector('#temperature');
 const windSpeedField = document.querySelector('#wind-speed');
+const humidityField = document.querySelector('#humidity');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#caption-desc');
 
 //API URL with arguments
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Trujillo&appid=87b0f2ce066fd9cb3261aeacfa987c28&units=metric';
+//const url = 'https://api.openweathermap.org/data/2.5/weather?q=Salt Lake&appid=87b0f2ce066fd9cb3261aeacfa987c28&units=metric';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=40.759370&lon=-111.891258&exclude=minutely,hourly&appid=87b0f2ce066fd9cb3261aeacfa987c28&units=metric';
 
 async function apiFetch(apiUrl) {
   try {
     const response = await fetch(apiUrl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // this is for testing the call
+      //console.log(data); // this is for testing the call
       displayResults(data);
     } else {
         throw Error(await response.text());
@@ -24,37 +26,65 @@ async function apiFetch(apiUrl) {
 apiFetch(url);
 
 function displayResults(weatherData) {
-  currentTemp.innerText = weatherData.main.temp.toFixed(0);
-  windSpeedField.innerText = weatherData.wind.speed;
+  currentInfo = weatherData.current;
+  //console.log(currentInfo)
+  currentTemp.innerText = currentInfo.temp.toFixed(0);
+  windSpeedField.innerText = currentInfo.wind_speed;
+  humidityField.innerText = currentInfo.humidity;
 
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-  const desc = weatherData.weather[0].description;
+  const iconsrc = `https://openweathermap.org/img/w/${currentInfo.weather[0].icon}.png`;
+  const desc = currentInfo.weather[0].description;
 
   weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', desc);
   captionDesc.innerHTML = titleize(desc);
 
-  calcWindChill();
-}
+  forecast = weatherData.daily;
+  console.log(forecast)
+  const day1Info = forecast[1];
+  daySection = document.querySelector('#day1');
+  wIcon = daySection.querySelector('.weather-icon');
+  wIcon.setAttribute('src', `https://openweathermap.org/img/w/${day1Info.weather[0].icon}.png`);
+  wIcon.setAttribute('alt', day1Info.weather[0].description);
+  wIcon.setAttribute('title', day1Info.weather[0].description);
+  temp = day1Info.temp;
+  daySection.querySelector('.temperature').innerText = `${temp.max.toFixed(0)}º | ${temp.min.toFixed(0)}º`;
 
-function calcWindChill() {
-  const tempCelsius = parseFloat(document.getElementById("temperature").innerText);
-  const windSpeed = parseFloat(document.getElementById("wind-speed").innerText);
-  const windChillField = document.getElementById('wind-chill');
+  forDay = new Date(day1Info.dt * 1000).toDateString();
+  var monthDay = document.createElement('i');
+  monthDay.textContent = `${forDay.split(" ")[1]} ${forDay.split(" ")[2]}`;
+  daySection.querySelector('.cur-date').innerText = forDay.split(" ")[0];
+  daySection.querySelector('.cur-date').appendChild(monthDay);
 
-  let tempFahrenheit = (tempCelsius * 1.8) + 32;
-  let windSpeedMph = windSpeed * 0.62137
+  const day2Info = forecast[2];
+  daySection = document.querySelector('#day2');
+  wIcon = daySection.querySelector('.weather-icon');
+  wIcon.setAttribute('src', `https://openweathermap.org/img/w/${day2Info.weather[0].icon}.png`);
+  wIcon.setAttribute('alt', day2Info.weather[0].description);
+  wIcon.setAttribute('title', day2Info.weather[0].description);
+  temp = day2Info.temp;
+  daySection.querySelector('.temperature').innerText = `${temp.max.toFixed(0)}º | ${temp.min.toFixed(0)}º`;
 
-  console.log(tempFahrenheit)
-  console.log(windSpeedMph)
+  forDay = new Date(day2Info.dt * 1000).toDateString();
+  var monthDay = document.createElement('i');
+  monthDay.textContent = `${forDay.split(" ")[1]} ${forDay.split(" ")[2]}`;
+  daySection.querySelector('.cur-date').innerText = forDay.split(" ")[0];
+  daySection.querySelector('.cur-date').appendChild(monthDay);
 
-  if (tempFahrenheit < 50 && windSpeedMph > 3) {
-    let windChill = 35.74 + 0.6215 * tempFahrenheit - 35.75 * Math.pow(windSpeedMph, 0.16) + 0.4275 * tempFahrenheit * Math.pow(windSpeedMph, 0.16);
-    windChill = windChill.toFixed(1);
-    windChillField.textContent = `${windChill} °F`;
-  } else {
-    windChillField.textContent = "N/A";
-  }
+  const day3Info = forecast[3];
+  daySection = document.querySelector('#day3');
+  wIcon = daySection.querySelector('.weather-icon');
+  wIcon.setAttribute('src', `https://openweathermap.org/img/w/${day3Info.weather[0].icon}.png`);
+  wIcon.setAttribute('alt', day3Info.weather[0].description);
+  wIcon.setAttribute('title', day3Info.weather[0].description);
+  temp = day3Info.temp;
+  daySection.querySelector('.temperature').innerText = `${temp.max.toFixed(0)}º | ${temp.min.toFixed(0)}º`;
+
+  forDay = new Date(day3Info.dt * 1000).toDateString();
+  var monthDay = document.createElement('i');
+  monthDay.textContent = `${forDay.split(" ")[1]} ${forDay.split(" ")[2]}`;
+  daySection.querySelector('.cur-date').innerText = forDay.split(" ")[0];
+  daySection.querySelector('.cur-date').appendChild(monthDay);
 }
 
 function titleize(str) {
