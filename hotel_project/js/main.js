@@ -47,27 +47,27 @@ if (document.querySelector('.content.discover')) {
         imagesToLoad.forEach(img => {loadImage(img)});
     }
 
-    //Local storage
-    const userVisit = document.querySelector(".last-visit");
+    ////Local storage
+    //const userVisit = document.querySelector(".last-visit");
 
-    // get the stored value in localStorage
-    const lastVisit = localStorage.getItem("last_visit");
+    //// get the stored value in localStorage
+    //const lastVisit = localStorage.getItem("last_visit");
 
-    const currentTime = new Date().getTime();
-    const lastVisitInDays = lastVisit ? numberOfDays(currentTime, lastVisit) : 0;
+    //const currentTime = new Date().getTime();
+    //const lastVisitInDays = lastVisit ? numberOfDays(currentTime, lastVisit) : 0;
 
-    if (lastVisitInDays > 0) {
-    time = lastVisitInDays > 1 ? 'days' : 'day';
-        userVisit.textContent = `${lastVisitInDays} ${time} ago`;
-    } else {
-        userVisit.textContent = 'Today';
-    }
+    //if (lastVisitInDays > 0) {
+    //time = lastVisitInDays > 1 ? 'days' : 'day';
+    //    userVisit.textContent = `${lastVisitInDays} ${time} ago`;
+    //} else {
+    //    userVisit.textContent = 'Today';
+    //}
 
-    localStorage.setItem("last_visit", currentTime);
+    //localStorage.setItem("last_visit", currentTime);
 
-    function numberOfDays(date1, date2){
-        return parseInt((date1 - date2) / 1000 / 3600 / 24);
-    }
+    //function numberOfDays(date1, date2){
+    //    return parseInt((date1 - date2) / 1000 / 3600 / 24);
+    //}
 }
 
 if (document.querySelector('.content.thanks')) {

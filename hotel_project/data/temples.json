@@ -1,0 +1,86 @@
+[
+    {
+        "templeName": "Bountiful Utah Temple",
+        "location": "Bountiful, Utah, United States",
+        "dedicated": "8 January 1995",
+        "imageUrl": "https://assets.ldscdn.org/b3/1f/b31f8fc3892ce063cfbd0607cd53980290fcc0ae/aba_nigeria_temple_lds.jpeg",
+        "telephone": "(1) 801-296-2100",
+        "email": "BOUNT-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ]
+    },
+    {
+        "templeName": "Brigham City Utah Temple",
+        "location": "Brigham City, Utah, United States",
+        "dedicated": "23 September 2012",
+        "imageUrl": "https://assets.ldscdn.org/93/92/9392e6adee3d1aa025548de1a852a27ad8ea40f4/brigham_city_utah_temple_dawn.jpeg",
+        "telephone": "(1) 435-695-2170",
+        "email": "BRIGH-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "No clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ]
+    },
+    {
+        "templeName": "Logan Utah Temple",
+        "location": "Logan, Utah, United States",
+        "dedicated": "17 May 1884",
+        "imageUrl": "https://assets.ldscdn.org/07/66/0766f32cfa9c69e9c838361d874aeb819983139a/logan_temple_lds.jpeg",
+        "telephone": "(1) 435-752-3611",
+        "email": "LOGAN-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "No distribution center nearby"
+        ]
+    },
+    {
+        "templeName": "Vernal Utah Temple",
+        "location": "Vernal, Utah, United States",
+        "dedicated": "2 November 1997",
+        "imageUrl": "https://assets.ldscdn.org/41/0a/410a29915aac112f15a293d963abfadee117776f1068523/vernal_temple_lds.jpeg",
+        "telephone": "(1) 435-789-3220",
+        "email": "VERNA-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ]
+    },
+    {
+        "templeName": "Jordan River Utah Temple",
+        "location": "South Jordan, Utah, United States",
+        "dedicated": "16 November 1981",
+        "imageUrl": "https://assets.ldscdn.org/e5/54/e5546a3599c023ba83a4d751fb6fc196b5ab6ada/jordan_river_temple_exterior_images.jpeg",
+        "telephone": "(1) 801-254-3003",
+        "email": "JRIVE-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ]
+    },
+    {
+        "templeName": "Provo Utah Temple",
+        "location": "Provo, Utah, United States",
+        "dedicated": "9 February 1972",
+        "imageUrl": "https://assets.ldscdn.org/77/eb/77eb82391ad1795a117b25ee3deaf2a4d229311a/provo_temple_lds.jpg",
+        "telephone": "(1) 801-375-5775",
+        "email": "PROVO-OFF@ChurchofJesusChrist.org",
+        "services": [
+            "Clothing rental available",
+            "No cafeteria available",
+            "No patron housing available",
+            "Distribution center nearby"
+        ]
+    }
+]
