@@ -39,7 +39,7 @@
                 <div class="form-group">
                     <label class="date-label" for="arrival">Arrival Date</label>
                     <div class="date-picker-input-group">
-                      <input class="form-control" id="arrival" name="arrival" placeholder="Arrival" startdatefield="" required="required">
+                      <input class="form-control" id="arrival" name="arrival" placeholder="Arrival" required="required">
                       <span class="input-group-addon">
                           <img src="images/calendar.png" alt="logo" width="20">
                       </span>
@@ -49,7 +49,7 @@
                 <div class="form-group">
                     <label class="date-label" for="departure">Departure Date</label>
                     <div class="date-picker-input-group">
-                      <input class="form-control" enddatefield="" id="departure" name="departure" placeholder="Departure" required="required">
+                      <input class="form-control" id="departure" name="departure" placeholder="Departure" required="required">
                       <span class="input-group-addon">
                           <img src="images/calendar.png" alt="logo" width="20">
                       </span>
@@ -61,12 +61,17 @@
           <div class="row booking">
             <div class="form-group">
                 <label for="numRooms">Rooms</label>
-                <select class="form-control c-select ng-pristine ng-valid ng-touched" id="numRooms" name="numRooms" required="required">
+                <select class="form-control" id="numRooms" name="numRooms" required="required">
+                    <option value="">
+                        Select
+                    </option>
                     <option value="1">
                         1
-                    </option><option value="2">
+                    </option>
+                    <option value="2">
                         2
-                    </option><option value="3">
+                    </option>
+                    <option value="3">
                         3
                     </option>
                 </select>
@@ -74,28 +79,37 @@
 
             <div class="form-group">
                 <label for="numAdults">Adults</label>
-                <select class="form-control c-select ng-pristine ng-valid ng-touched" id="numAdults" name="Adults" required="required">
-                    <option value="1">
+                <select class="form-control" id="numAdults" name="Adults" required="required">
+                    <option value="">
+                        Select
+                    </option>
+                     <option value="1">
                         1
-                    </option><option value="2">
+                    </option>
+                    <option value="2">
                         2
-                    </option><option value="3">
+                    </option>
+                    <option value="3">
                         3
-                    </option><option value="4">
+                    </option>
+                    <option value="4">
                         4
-                    </option><option value="5">
+                    </option>
+                    <option value="5">
                         5
                     </option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="children">Children</label>
-                <select class="form-control c-select ng-untouched ng-pristine ng-valid" id="children" name="Children">
+                <select class="form-control" id="children" name="Children">
                     <option value="0">
                         0
-                    </option><option value="1">
+                    </option>
+                    <option value="1">
                         1
-                    </option><option value="2">
+                    </option>
+                    <option value="2">
                         2
                     </option>
                 </select>
