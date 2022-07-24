@@ -1004,6 +1004,21 @@ input[type=submit] {
   margin-top: 0;
 }
 
+.like-button {
+  background-image: url("../images/like-0.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+.like-button.active {
+  background-image: url("../images/like-1.png");
+}
+
 @media only screen and (max-width: 37rem) {
   .content.join-page h1 {
     margin-top: 0;

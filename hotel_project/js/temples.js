@@ -44,9 +44,17 @@ function output(temples) {
     });
     servicesContainer.appendChild(servicesUl)
 
+    let templeId = temple.templeId;
+    let likeButton = document.createElement("div");
+    likeButton.id = `btn-${templeId}`;
+    likeButton.classList.add("like-button");
+    likeButton.classList.add(likeStatus(templeId));
+    likeButton.addEventListener('click', likeAction);
+
     article.appendChild(templeName);
     article.appendChild(dedicated);
     article.appendChild(img);
+    article.appendChild(likeButton);
     article.appendChild(location);
     article.appendChild(contactContainer);
     article.appendChild(servicesTitle);
@@ -54,6 +62,27 @@ function output(temples) {
 
     document.querySelector("#temples").appendChild(article);
   });
+}
+
+function likeStatus(templeId) {
+  let status = localStorage.getItem(`btn-${templeId}`);
+  if (status == null) status = 'none';
+  return status;
+}
+
+function likeAction(e) {
+  let button = e.currentTarget;
+  let btnId = button.id
+  let status = localStorage.getItem(btnId);
+
+  button.classList.toggle("active");
+  button.classList.toggle("none");
+  if (status == 'active')
+    status = 'none';
+  else
+    status = 'active';
+
+  localStorage.setItem(btnId, status);
 }
 
 async function getTemples(url) {

@@ -1,5 +1,6 @@
 [
     {
+        "templeId": "1",
         "templeName": "Bountiful Utah Temple",
         "location": "Bountiful, Utah, United States",
         "dedicated": "8 January 1995",
@@ -14,6 +15,7 @@
         ]
     },
     {
+        "templeId": "2",
         "templeName": "Brigham City Utah Temple",
         "location": "Brigham City, Utah, United States",
         "dedicated": "23 September 2012",
@@ -28,6 +30,7 @@
         ]
     },
     {
+        "templeId": "3",
         "templeName": "Logan Utah Temple",
         "location": "Logan, Utah, United States",
         "dedicated": "17 May 1884",
@@ -42,6 +45,7 @@
         ]
     },
     {
+        "templeId": "4",
         "templeName": "Vernal Utah Temple",
         "location": "Vernal, Utah, United States",
         "dedicated": "2 November 1997",
@@ -56,6 +60,7 @@
         ]
     },
     {
+        "templeId": "5",
         "templeName": "Jordan River Utah Temple",
         "location": "South Jordan, Utah, United States",
         "dedicated": "16 November 1981",
@@ -70,6 +75,7 @@
         ]
     },
     {
+        "templeId": "6",
         "templeName": "Provo Utah Temple",
         "location": "Provo, Utah, United States",
         "dedicated": "9 February 1972",
